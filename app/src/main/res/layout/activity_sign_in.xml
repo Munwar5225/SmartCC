@@ -6,4 +6,157 @@
     android:layout_height="match_parent"
     tools:context=".Activities.SignIn">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/picture"
+            android:layout_width="123dp"
+            android:layout_height="121dp"
+            android:background="@drawable/avatar"
+            android:baselineAligned="false"
+            android:elevation="12dp"
+            app:cardCornerRadius="80dp">
+
+            <ImageView
+                android:id="@+id/ivapplogo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cropToPadding="false"
+                android:scaleType="fitCenter"
+                android:src="@drawable/logo"
+                tools:ignore="ImageContrastCheck" />
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <EditText
+            android:id="@+id/etEmails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:autofillHints=""
+            android:hint="@string/email_adress"
+            android:inputType="text"
+            android:textColor="#040101"
+            android:textColorHint="#7A050505"
+            android:textColorLink="#000000"
+            android:textSize="18sp"
+            tools:ignore="TextFields,TouchTargetSizeCheck,TextContrastCheck" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:autofillHints="true"
+            android:hint="@string/pasward"
+            android:inputType="textPassword"
+            android:textColor="#040101"
+            android:textColorHint="#7A050505"
+            android:textColorLink="#000000"
+            android:textSize="18sp"
+            tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/tvAlreadyAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="Don't have account?"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            tools:ignore="RtlHardcoded" />
+
+        <Button
+            android:id="@+id/btnSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_bg"
+            android:text="Sign In"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/or_sign_up_with"
+            android:textColor="#0B0B0B" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnGooglr"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg"
+                android:drawableStart="@drawable/googlee"
+                android:text="@string/google"
+                android:textColor="#0277BD"
+                tools:ignore="TouchTargetSizeCheck" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnFacebooks"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg"
+                android:drawableStart="@drawable/facebook"
+                android:drawablePadding="4dp"
+                android:drawingCacheQuality="auto"
+                android:scrollbarAlwaysDrawHorizontalTrack="false"
+                android:text="@string/facebook"
+                app:cornerRadius="5dp"
+                tools:ignore="TouchTargetSizeCheck" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/or"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:textColor="#6D4C41"
+            tools:text="or with" />
+
+        <TextView
+            android:id="@+id/tvMobileNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="right|center_vertical"
+            android:padding="8dp"
+            android:text="@string/phone_number"
+            android:background="@drawable/bg"
+            android:textColor="#0277BD"
+            android:textSize="14sp"
+            android:drawablePadding="20dp"
+            app:drawableLeftCompat="@drawable/ic_baseline_contact_phone_24"
+            app:drawableTint="@color/green" />
+
+
+    </LinearLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
